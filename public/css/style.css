@@ -1,0 +1,618 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+/* Estilizacion del home */
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+
+header div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+header div.top-header div.logo{
+    width: 50vw;
+}
+
+header div.logo{
+    padding: 10px;
+}
+
+
+header .form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 2vw;
+}
+
+header div.top-header .compraencuotas{
+    font-size: 3vw;
+    font-weight: bold;
+    position: relative;
+    top: 8px;
+}
+
+header nav{
+   display: none;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header div.searchbar form.barra{
+    position: relative;
+    display: flex;
+
+    width: 3.2vw;
+    top: 2vw;
+}
+
+
+header div.top-header div.searchbar{
+    position: relative;
+    display: flex;
+    height: 3.2vw;
+}
+
+header div.searchbar form.barra input.inputbar{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    height: 3.2vw;
+    width: 30vw;
+    font-size: 2vw;
+}
+
+
+header div.searchbar form.barra button.botonlupa{
+    position: relative;
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 3.2vw;
+    height: 3.2vw;
+    
+    
+}
+
+header div.top-header div.searchbar form.barra button.botonlupa i{
+    text-align: center;
+    position: relative;
+    font-size: 2vw;
+    padding: 1vw;
+    right: 0.5vw;
+    bottom: 0.5vw;
+    
+}
+
+div.burger-menu{
+    text-align: center;
+    
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main article{
+    transition: box-shadow, 200ms;
+}
+
+main article:hover{
+
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 2vw;
+    padding: 0.9vw;
+    width: 4vw;
+    height: 4vw;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -4vw;
+    transition: rotate, 500ms;
+}
+
+main section article i:hover{
+    rotate: -90deg ;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+article div.main-article .description{
+    
+    font-size: 5vw;
+    display: none;
+    transition: display, 100ms;
+}
+
+main article:hover{
+    .description{
+    display: block;
+    }
+}
+
+article div.main-article .price{
+    font-size: 5vw;
+}
+article div.main-article .discount{
+    font-size: 5vw;
+}
+
+footer{
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+footer div.infofooter{
+    width:50vw;
+}
+
+
+.pagacontarjeta {
+
+    position: relative;
+    top: 50px;
+    color: #000;
+    font-weight: bold;
+    font-size: 15;
+    text-align: center;
+
+}
+
+.conmercadoliebrecash{
+    
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+
+.enviogratisdesde{
+    position: relative;
+    top: 50px;
+    color: #000;
+    font-weight: bold;
+    font-size: 15;
+    text-align: center;
+}
+
+.soloporestarregistrado{
+
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+
+.seguridadprincipio{
+    position: relative;
+    top: 50px;
+    color: #000;
+    font-weight: bold;
+    font-size: 15;
+    text-align: center;
+}
+.notegusta{
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+
+.copyright{
+    position: relative;
+    top: 70px;
+    color: #000;
+    font-weight: bold;
+    font-size: 15;
+    text-align: center;
+}
+
+div.infofooter i{
+
+    position: relative;
+    top: 50px;
+    color: blue;
+    font-size: 30px ;
+    text-align: center;
+    left: 47vw;
+    transition: color, 1ms;
+}
+
+div.infofooter i:hover{
+    color: purple;
+}
+
+
+
+input:invalid{
+    border-color: red ;
+}
+
+span.mensaje-error{
+    display: none;
+    color: red;
+}
+input:invalid + span.mensaje-error{
+    display: block;
+}
+
+
+/* Estilizacion del register*/
+
+main.register{
+    text-align: center;
+    position: relative;
+    display: flex;
+    top: 8vw;
+    background-color: #dbdbdb;
+    padding: 5vw;
+    align-content: space-between ;
+    
+
+}
+main.register form.formregister{
+
+    position: relative;
+    left: 15vw;
+}
+
+main.register form.register input.botonenviar{
+    width: 389vw;
+    position: relative;
+}
+
+footer div.infofooter{
+    width: 100vw;
+    height: 100vw;
+}
+
+footer div.infofooter .Copyrightlog{
+    position: relative;
+    top: 15vw;
+    color: #000;
+    font-weight: bold;
+    font-size: 15;
+    text-align: center;
+    
+}
+
+/* Estilizacion del login*/
+
+main.login{
+    text-align: center;
+    position: relative;
+    display: flex;
+    top: 8vw;
+    background-color: #dbdbdb;
+    padding: 5vw;
+    align-content: space-between ;
+    
+
+}
+
+main.login form.formlogin{
+    position: relative;
+    left: 14vw;
+
+}
+
+input.botonenviar{
+    position: relative;
+    background-color: rgb(0, 204, 255);
+    padding: 0.5vw;
+    border-color: rgb(0, 204, 255);
+    width: 50vw;
+    color: white;
+    transition: background-color, 1ms;
+
+}
+input.botonreset{
+    background-color: rgb(243, 90, 90);
+    padding: 0.5vw;
+    border-color: rgb(235, 80, 80);
+    width: 50vw;
+    position: relative;
+    top: 1.5vw;
+    color: white;
+    transition: background-color, 1ms;
+}
+
+footer div.infofooter{
+    position: relative;
+    top:10vw;
+    
+    
+}
+
+input.botonenviar:hover{
+    
+    background-color: #0022aa;
+
+}
+
+input.botonreset:hover{
+    background-color: red;
+}
+
+
+
+@media (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+
+    
+}
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+
+    footer div.infofooter{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        flex-wrap: nowrap;
+    }
+
+    div.infofooter i{
+
+        position: relative;
+        top: 50px;
+        color: blue;
+        font-size: 30px ;
+        text-align: center;
+        left: 0vw;
+    }
+
+    footer div.infofooter .Copyrightlog{
+        position: relative;
+        right: 35vw;
+    }
+}
+
+@media (min-width:361px){
+    
+    header nav{
+       
+       display: flex;
+       font-size: 2vw;
+      margin-left: 20px;
+      flex-direction: row;
+      justify-content: space-between;
+      
+    }
+
+    header nav .navlist1{
+
+        width: 40vw;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 1.5vw;
+    }
+
+    header div.top-header .compraencuotas{
+        display: flex;
+        flex-wrap: flex-end;
+       
+    }
+    header nav .navlist2{
+
+        width: 40vw;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 1.5vw;
+    }
+
+
+    div.burger-menu{
+        display: none;
+    }
+
+    .compraencuotas{
+        width: 40vw;
+    }
+
+    header div.top-header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        
+        
+    }
+
+    header div.top-header div.logo{
+        width: 80vw;
+        position: relative;
+        
+       
+
+    }
+
+    div.top-header div.searchbar{
+
+        display: flex;
+        position: relative;
+        align-items: center;
+        left: 6vw;
+        width: 200vw;
+        
+       
+    }
+
+   header div.top-header .compraencuotas {
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        top: -3vw;
+        left: 2vw;
+        font-size: 1.0vw;
+        
+
+
+    }
+
+    article div.main-article .description{
+        font-size: 1.5vw;
+    }
+
+    article div.main-article .price{
+        font-size: 2vw;
+    }
+    article div.main-article .discount{
+        font-size: 2vw;
+    }
+    
+
+
+}
